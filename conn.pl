@@ -1,5 +1,7 @@
 #!/usr/bin/perl
-# mad666ted@gmail.com
+# MadTed mad666ted@gmail.com
+# script for displaying active connections from
+# locale running crytocurrencies nodes
 use strict;
 use warnings;
 $| = 1;	 # autoflush for immediate console output
@@ -42,7 +44,7 @@ while (1) {
 	print "============================\n";
 	#
 	# write once active connections to file, append mode
-	# for future processing
+	# for future processing, e.g. adding IP's to node's config (addnode ...)
 	# btc
 	if (@btc_ip) {
 		open( fh1, ">>", "btc_ip.txt") or die "Cannot open [btc_ip.txt] for write";
